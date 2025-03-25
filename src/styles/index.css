@@ -1,0 +1,122 @@
+/* ===================== */
+/*      VARIABLES        */
+/* ===================== */
+:root {
+    /* Variables globales o de "tema" general */
+    --primary-bg: radial-gradient(circle, rgba(142,240,199,1) 0%, rgba(84,203,38,1) 100%);
+    --primary-color: #333;
+
+    /* === Variables para el Formulario === */
+    --form-bg: #ffffff;
+    --form-text-color: #333333;
+    --form-border-color: #cccccc;
+    --form-button-bg: #007bff;
+    --form-button-hover-bg: #0056b3;
+
+    /* === Variables para el Canvas/Triángulo === */
+    --canvas-width: 400;           /* Ancho en px, sin 'px' para pasar al JS */
+    --canvas-height: 300;          /* Alto en px, sin 'px' para pasar al JS */
+    --canvas-border-width: 2px;
+    --canvas-border-color: #000;
+    --triangle-fill: rgba(0, 150, 255, 0.5);
+    --triangle-border: #000;
+    --text-color: #000;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --shadow-blur: 5;
+    --transition-duration: 0.3s;
+}
+
+/* ===================== */
+/*     ESTILOS GLOBALES  */
+/* ===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--primary-bg);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.separar{
+    width: 100%;
+    background: var(--canvas-border-color);
+    height: 2px;
+    border-radius: 50%;
+}
+.App{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.triangle-form-content,.triangle-info{
+    background-color: var(--form-bg);
+    border: 2px solid var(--form-border-color);
+    color: var(--form-text-color);
+    width: 80%;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===================== */
+/*   FORMULARIO (Form)   */
+/* ===================== */
+.triangle-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.triangle-form label {
+    font-weight: bold;
+}
+
+.triangle-form input {
+    margin: 0 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+}
+
+.triangle-form button {
+    padding: 10px;
+    background-color: var(--form-button-bg);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.triangle-form button:hover {
+    background-color: var(--form-button-hover-bg);
+}

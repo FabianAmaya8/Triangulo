@@ -1,0 +1,21 @@
+/* src/styles/triangle.css */
+:root {
+    --canvas-width: 400;
+    --canvas-height: 300;
+    --canvas-border-width: 2px;
+    --canvas-border-color: #000;
+    --canvas-bg: #eee;
+    --triangle-fill: #0096ff80;
+    --triangle-border: #000;
+    --text-color: #000;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --shadow-blur: 5;
+    --transition-duration: 0.3s;
+}
+
+.triangle-canvas {
+    border: var(--canvas-border-width) solid var(--canvas-border-color);
+    transition: width var(--transition-duration) ease, height var(--transition-duration) ease;
+    display: block;
+    margin: 20px auto;
+}

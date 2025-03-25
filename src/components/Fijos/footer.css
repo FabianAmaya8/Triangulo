@@ -1,0 +1,36 @@
+/*======== estilos del footer ========*/
+footer{
+    background: #87c371;
+    color: #333;
+    padding: 30px 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 90%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.footer-conteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-conteiner ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-conteiner ul li{
+    margin-right: 20px;
+}
+
+.footer-conteiner ul li a{
+    color: #333;
+    text-decoration: none;
+}
